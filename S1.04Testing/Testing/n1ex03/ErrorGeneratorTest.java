@@ -8,15 +8,13 @@ class ErrorGeneratorTest {
 
 	@Test
 	void test() {
-		
+
 		try {
-			ErrorGenerator.IndexOutOfBounds();	      
-	        fail("the exception has not happened");
-	    } catch (Exception e) {
-	       
-	    }		
+			ErrorGenerator.IndexOutOfBounds();
+			fail("the exception has not happened");
+		} catch (Exception e) {
+
+		}
 	}
 
 }
-
-
