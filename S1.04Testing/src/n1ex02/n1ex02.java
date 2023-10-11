@@ -12,7 +12,7 @@ public class n1ex02 {
 		int DniNum7 = 55627482;
 		int DniNum8 = 354627482;
 		int DniNum9 = 234627482;
-		int DniNum10 = 2145482;
+		int DniNum10 = 22145482;
 		char result1 = DniCalculator.calculateLetter(DniNum1);
 		char result2 = DniCalculator.calculateLetter(DniNum2);
 		char result3 = DniCalculator.calculateLetter(DniNum3);

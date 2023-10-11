@@ -17,7 +17,7 @@ class DniCalculatorTest {
 		int DniNum7 = 55627482;
 		int DniNum8 = 354627482;
 		int DniNum9 = 234627482;
-		int DniNum10 = 2145482;
+		int DniNum10 = 22145482;
 		char result1 = DniCalculator.calculateLetter(DniNum1);
 		char result2 = DniCalculator.calculateLetter(DniNum2);
 		char result3 = DniCalculator.calculateLetter(DniNum3);
@@ -32,7 +32,7 @@ class DniCalculatorTest {
 		assertAll(() -> assertEquals('Q', result1), () -> assertEquals('A', result2), () -> assertEquals('E', result3),
 				() -> assertEquals('G', result4), () -> assertEquals('A', result5), () -> assertEquals('T', result6),
 				() -> assertEquals('G', result7), () -> assertEquals('G', result8), () -> assertEquals('C', result9),
-				() -> assertEquals('L', result10));
+				() -> assertEquals('R', result10));
 	}
 
 }
