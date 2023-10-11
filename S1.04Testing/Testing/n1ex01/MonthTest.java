@@ -8,14 +8,13 @@ import org.junit.jupiter.api.Test;
 class MonthTest {
 
 	@Test
-	void test() {
+	void test() {		
 		ArrayList<String> months1 = new ArrayList<>();
 		months1 = months.returnMonths();
 		final int monthsNum = months1.size();
-		String eighthMonth = months1.get(7);
-		months1.get(0);
+		String eighthMonth = months1.get(7);		
 
-		assertAll(() -> assertEquals(12, monthsNum), () -> assertEquals("August", eighthMonth));
+		assertAll(() -> assertEquals(12, monthsNum), () -> assertEquals("August", eighthMonth), () -> assertNotNull((eighthMonth)));
 	}
 
 }
