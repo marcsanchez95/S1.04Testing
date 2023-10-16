@@ -12,7 +12,7 @@ class ErrorGeneratorTest {
 		try {
 			ErrorGenerator.IndexOutOfBounds();
 			fail("the exception has not happened");
-		} catch (Exception e) {
+		} catch (IndexOutOfBoundsException e) {
 
 		}
 	}

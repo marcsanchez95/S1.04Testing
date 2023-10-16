@@ -4,39 +4,39 @@ import java.util.ArrayList;
 
 public class DniCalculator {
 
-	public static char calculateLetter(int numDni) {
+	public char calculateLetter(int numDni) {
+		
+		ArrayList<Character> letters = new ArrayList<Character>();
 
-		ArrayList<Character> letras = new ArrayList<Character>();
-
-		letras.add('T');
-		letras.add('R');
-		letras.add('W');
-		letras.add('A');
-		letras.add('G');
-		letras.add('M');
-		letras.add('Y');
-		letras.add('F');
-		letras.add('P');
-		letras.add('D');
-		letras.add('X');
-		letras.add('B');
-		letras.add('N');
-		letras.add('J');
-		letras.add('Z');
-		letras.add('S');
-		letras.add('Q');
-		letras.add('V');
-		letras.add('H');
-		letras.add('L');
-		letras.add('C');
-		letras.add('K');
-		letras.add('E');
+		letters.add('T');
+		letters.add('R');
+		letters.add('W');
+		letters.add('A');
+		letters.add('G');
+		letters.add('M');
+		letters.add('Y');
+		letters.add('F');
+		letters.add('P');
+		letters.add('D');
+		letters.add('X');
+		letters.add('B');
+		letters.add('N');
+		letters.add('J');
+		letters.add('Z');
+		letters.add('S');
+		letters.add('Q');
+		letters.add('V');
+		letters.add('H');
+		letters.add('L');
+		letters.add('C');
+		letters.add('K');
+		letters.add('E');
 
 		int check;
 
 		check = numDni % 23;
 
-		char correctLetter = letras.get(check);
+		char correctLetter = letters.get(check);
 
 		return correctLetter;
 

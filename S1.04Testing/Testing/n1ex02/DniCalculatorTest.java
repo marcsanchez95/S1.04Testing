@@ -8,31 +8,21 @@ class DniCalculatorTest {
 
 	@Test
 	void test() {
-		int DniNum1 = 23245426;
-		int DniNum2 = 534627482;
-		int DniNum3 = 258727482;
-		int DniNum4 = 254876482;
-		int DniNum5 = 254678382;
-		int DniNum6 = 66653724;
-		int DniNum7 = 55627482;
-		int DniNum8 = 354627482;
-		int DniNum9 = 234627482;
-		int DniNum10 = 22145482;
-		char result1 = DniCalculator.calculateLetter(DniNum1);
-		char result2 = DniCalculator.calculateLetter(DniNum2);
-		char result3 = DniCalculator.calculateLetter(DniNum3);
-		char result4 = DniCalculator.calculateLetter(DniNum4);
-		char result5 = DniCalculator.calculateLetter(DniNum5);
-		char result6 = DniCalculator.calculateLetter(DniNum6);
-		char result7 = DniCalculator.calculateLetter(DniNum7);
-		char result8 = DniCalculator.calculateLetter(DniNum8);
-		char result9 = DniCalculator.calculateLetter(DniNum9);
-		char result10 = DniCalculator.calculateLetter(DniNum10);
-		
-		assertAll(() -> assertEquals('Q', result1), () -> assertEquals('A', result2), () -> assertEquals('E', result3),
-				() -> assertEquals('G', result4), () -> assertEquals('A', result5), () -> assertEquals('T', result6),
-				() -> assertEquals('G', result7), () -> assertEquals('G', result8), () -> assertEquals('C', result9),
-				() -> assertEquals('R', result10));
-	}
+	
+		char letter1 = new DniCalculator().calculateLetter(23245426);
+		char letter2 = new DniCalculator().calculateLetter(534627482);
+		char letter3 = new DniCalculator().calculateLetter(258727482);
+		char letter4 = new DniCalculator().calculateLetter(254876482);
+		char letter5 = new DniCalculator().calculateLetter(254678382);
+		char letter6 = new DniCalculator().calculateLetter(66653724);
+		char letter7 = new DniCalculator().calculateLetter(55627482);
+		char letter8 = new DniCalculator().calculateLetter(354627482);
+		char letter9 = new DniCalculator().calculateLetter(234627482);
+		char letter10 = new DniCalculator().calculateLetter(22145482);
 
+		assertAll(() -> assertEquals('Q', letter1), () -> assertEquals('A', letter2), () -> assertEquals('E', letter3),
+				() -> assertEquals('G', letter4), () -> assertEquals('A', letter5), () -> assertEquals('T', letter6),
+				() -> assertEquals('G', letter7), () -> assertEquals('G', letter8), () -> assertEquals('C', letter9),
+				() -> assertEquals('R', letter10));
+	}
 }
