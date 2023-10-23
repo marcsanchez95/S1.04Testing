@@ -9,12 +9,8 @@ class ErrorGeneratorTest {
 	@Test
 	void test() {
 
-		try {
-			ErrorGenerator.IndexOutOfBounds();
-			fail("the exception has not happened");
-		} catch (IndexOutOfBoundsException e) {
+		assertThrows(ArrayIndexOutOfBoundsException.class, () -> ErrorGenerator.IndexOutOfBounds());
 
-		}
 	}
 
 }
