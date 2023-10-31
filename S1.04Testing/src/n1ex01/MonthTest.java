@@ -11,7 +11,7 @@ class MonthTest {
 	void test() {
 		ArrayList<String> months = new Months().returnMonths();
 	
-		assertAll(() -> assertEquals(12, months.size()), () -> assertEquals("August", months.get(8)), () -> assertNotNull((months.get(0))));
+		assertAll(() -> assertEquals(12, months.size()), () -> assertEquals("August", months.get(7)), () -> assertNotNull((months.get(0))));
 	}
 
 }
