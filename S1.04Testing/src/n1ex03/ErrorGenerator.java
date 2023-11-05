@@ -1,12 +1,9 @@
 package n1ex03;
 
 
-public class ErrorGenerator {
-
-	public static void IndexOutOfBounds() {
-
-		int[] nums = new int[4];
-		int value = nums[-1];
-
+@SuppressWarnings("serial")
+public class ErrorGenerator extends Exception {
+		public static void IndexOutOfBounds() throws ArrayIndexOutOfBoundsException {
+			throw new ArrayIndexOutOfBoundsException();
+		}
 	}
-}

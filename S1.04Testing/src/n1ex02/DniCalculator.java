@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class DniCalculator {
 
-	public char calculateLetter(int numDni) {
+	public static char calculateLetter(int numDni) {
 		
 		ArrayList<Character> letters = new ArrayList<Character>();
 
